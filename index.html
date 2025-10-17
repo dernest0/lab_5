@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8" />
+    <title>Volunteer Form</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #555;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+      margin-top: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 250px;
+      margin-bottom: 10px;
+    }
+    textarea {
+      height: 60px;
+    }
+    input[type="submit"] {
+      margin-top: 10px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Volunteer Form</h1>
+        <!-- This is a practice page for Lab 5.  Cut and paste notes from w3schools.com  -->
+        <!-- GET appends your data to the URL.  For passwords do not use GET change to POST-->
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+     <fieldset>
+      <legend>My Info</legend>
+
+      <label for="first_name_field"> First name:</label>
+      <input type="text" id="first_name_field" name="first_name_field" required><br>
+
+      <label for="last_name_field"> Last name:</label>
+      <input type="text" id="last_name_field" name="last_name_field" required><br>
+
+      <label for="phone_field"> Phone:</label>
+      <input type="text" id="phone_field" name="phone_field" required><br>
+
+      <label for="email_field"> Email:</label>
+      <input type="email" id="email_field" name="email_field" required><br>
+
+      <label> Gender:</label>
+      <input type="radio" id="male" name="gender_field" value="male">
+      <label for="male"> Male</label>
+
+      <input type="radio" id="female" name="gender_field" value="female">
+      <label for="female"> Female</label><br>
+
+      <label for="age_field"> Age:</label>
+
+      <select id="age_field" name="age_field">
+        <option value="under 18"> under 18</option>
+        <option value="over 18"> over 18</option>
+      </select>
+     </fieldset>
+     
+    <fieldset>
